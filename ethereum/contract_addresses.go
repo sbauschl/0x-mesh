@@ -31,17 +31,17 @@ func NewContractAddressesForChainID(chainID int) (ContractAddresses, error) {
 	switch chainID {
 	case 1:
 		return ContractAddresses{
-			ERC20Proxy:          common.HexToAddress("0x95e6f48254609a6ee006f7d493c8e5fb97094cef"),
-			ERC721Proxy:         common.HexToAddress("0xefc70a1b18c432bdc64b596838b4d138f6bc6cad"),
-			Exchange:            common.HexToAddress("0x61935cbdd02287b511119ddb11aeb42f1593b7ef"),
-			ERC1155Proxy:        common.HexToAddress("0x7eefbd48fd63d441ec7435d024ec7c5131019add"),
-			Coordinator:         common.HexToAddress("0x38a795580d0f687e399913a00ddef6a17612c722"),
-			CoordinatorRegistry: common.HexToAddress("0x45797531b873fd5e519477a070a955764c1a5b07"),
-			DevUtils:            common.HexToAddress("0xb1a3d901bad1df7d710fc8d008db7cdd6bbbffe6"),
-			WETH9:               common.HexToAddress("0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2"),
-			ZRXToken:            common.HexToAddress("0xe41d2489571d322189246dafa5ebde1f4699f498"),
-			ChaiBridge:          common.HexToAddress("0x77c31eba23043b9a72d13470f3a3a311344d7438"),
-			ChaiToken:           common.HexToAddress("0x06af07097c9eeb7fd685c692751d5c66db49c215"),
+			ERC20Proxy:          common.HexToAddress("0x0b47076aaa5246411458fcf85494f41bbfdb8470"),
+			ERC721Proxy:         common.HexToAddress("0xff7ca10af37178bdd056628ef42fd7f799fac77c"),
+			Exchange:            common.HexToAddress("0x533dc89624dcc012c7323b41f286bd2df478800b"),
+			ERC1155Proxy:        common.HexToAddress("0x53d791f18155c211ff8b58671d0f7e9b50e596ad"),
+			Coordinator:         common.HexToAddress("0x6669d66979f729445826fee33021090599ad7bd2"),
+			CoordinatorRegistry: common.HexToAddress("0x6f5b9e0456c4849224c7b59dc15f05c48641c4e3"),
+			DevUtils:            common.HexToAddress("0x7a2d89c4cb4b28b9cef9f269d48b3aecf0f549b7"),
+			WETH9:               common.HexToAddress("0x5b5e11e4818cceba3e82ca9b97cd0ab80be75ad3"),
+			ZRXToken:            common.HexToAddress("0xe01ac7c9eb19c63b063134ed2bb5eb7dcc847be9"),
+			ChaiBridge:          common.HexToAddress("0x5638a4b19f121adc4436de3f0e845173b33b594c"),
+			ChaiToken:           common.HexToAddress("0x5b5e11e4818cceba3e82ca9b97cd0ab80be75ad3"),
 			MaximumGasPrice:     common.HexToAddress("0xe2bfd35306495d11e3c9db0d8de390cda24563cf"),
 		}, nil
 	case 3:
