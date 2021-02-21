@@ -29,6 +29,21 @@ var GanacheAddresses = ganacheAddresses()
 // NewContractAddressesForChainID The default contract addresses for the standard chainIDs.
 func NewContractAddressesForChainID(chainID int) (ContractAddresses, error) {
 	switch chainID {
+	case 137:
+		return ContractAddresses{
+			ERC20Proxy:          common.HexToAddress("0x411b0bcf1b6ea88cb7229558c89994a2449c302c"),
+			ERC721Proxy:         common.HexToAddress("0x58807bad0b376efc12f5ad86aac70e78ed67deae"),
+			Exchange:            common.HexToAddress("0xfede379e48c873c75f3cc0c81f7c784ad730a8f7"),
+			ERC1155Proxy:        common.HexToAddress("0x207fa8df3a17d96ca7ea4f2893fcdcb78a304101"),
+			Coordinator:         common.HexToAddress("0xe45880fea5442a1914ddaa2e12411889f2b47a7d"),
+			CoordinatorRegistry: common.HexToAddress("0x12824d0ba9972458426d9000ab61ee906c8bd87e"),
+			DevUtils:            common.HexToAddress("0x68724fda24ce973ad8ad75a333ca1d7e046e1aa0"),
+			WETH9:               common.HexToAddress("0x0849b784a770027817301cc46cef753e9016b604"),
+			ZRXToken:            common.HexToAddress("0x03e1d56dfe6f4000ae38c7f8d002a6b0af55331c"),
+			ChaiBridge:          common.HexToAddress("0x5638a4b19f121adc4436de3f0e845173b33b594c"),
+			ChaiToken:           common.HexToAddress("0x5b5e11e4818cceba3e82ca9b97cd0ab80be75ad3"),
+			MaximumGasPrice:     common.HexToAddress("0xe2bfd35306495d11e3c9db0d8de390cda24563cf"),
+		}, nil
 	case 1:
 		return ContractAddresses{
 			ERC20Proxy:          common.HexToAddress("0x0b47076aaa5246411458fcf85494f41bbfdb8470"),
